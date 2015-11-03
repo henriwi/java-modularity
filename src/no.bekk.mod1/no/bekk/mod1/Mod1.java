@@ -1,9 +1,12 @@
 package no.bekk.mod1;
 
-public class Mod1 {
-	
-	public static String getMessage() {
-		return "BEKK Fagdag!";
-	}
+import no.bekk.api.module.Api;
 
+public class Mod1 implements Api {
+	
+	@Override
+	public void open() {
+		System.out.println("Hello from Mod1!");
+	}
+	
 }
