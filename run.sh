@@ -1,7 +1,4 @@
-mkdir -p mlib
 mkdir -p mods
-
-rm -rf mlib/*
 rm -rf mods/*
 
 mkdir -p mods/no.bekk.mod1
