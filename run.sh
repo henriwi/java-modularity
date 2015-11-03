@@ -1,1 +1,1 @@
-java -mp mlib -m no.bekk.mod2
+java -mp mlib -m no.bekk.mod1
