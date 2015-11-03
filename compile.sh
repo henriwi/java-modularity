@@ -12,3 +12,4 @@ jar --create --file mlib/no.bekk.twitter.jar -C mods/no.bekk.twitter .
 jar --create --file mlib/no.bekk.main.jar --main-class=no.bekk.main.Main -C mods/no.bekk.main .
 
 jlink --modulepath $JAVA_HOME/jmods:mlib --addmods no.bekk.main --output myapp
+
