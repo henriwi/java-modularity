@@ -1,3 +1,3 @@
 module no.bekk.mod1 {
-	exports no.bekk.mod1;
+	requires no.bekk.mod2;
 }
