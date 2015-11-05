@@ -4,16 +4,13 @@ import java.util.Iterator;
 import java.util.ServiceLoader;
 import no.bekk.api.module.Api;
 
-@SuppressWarnings("unchecked")
 public class Main {
     public static void main(String[] args) {
-    	ServiceLoader sl = ServiceLoader.load(Api.class);
+		ServiceLoader<Api> sl = ServiceLoader.load(Api.class);
 			Iterator<Api> iter = sl.iterator();
 			if (!iter.hasNext())
 				throw new RuntimeException("No service providers found!");
 
-			while (iter.hasNext()) {
-				iter.next().open();
-			}
+			iter.forEachRemaining(Api::open);
     }
 }
