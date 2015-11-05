@@ -1,4 +1,4 @@
 module no.bekk.sok {
-	requires no.bekk.api;
-	provides no.bekk.api.module.Api with no.bekk.sok.Sok;
+	requires no.bekk.module;
+	provides no.bekk.module.Module with no.bekk.sok.Sok;
 }
